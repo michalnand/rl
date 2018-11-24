@@ -1597,6 +1597,315 @@ class DatasetTicTacToe(DatasetInterface):
 DatasetTicTacToe_swigregister = _pyrl.DatasetTicTacToe_swigregister
 DatasetTicTacToe_swigregister(DatasetTicTacToe)
 
+class CNN(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, CNN, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, CNN, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        this = _pyrl.new_CNN(*args)
+        try:
+            self.this.append(this)
+        except __builtin__.Exception:
+            self.this = this
+    __swig_destroy__ = _pyrl.delete_CNN
+    __del__ = lambda self: None
+
+    def forward(self, *args):
+        return _pyrl.CNN_forward(self, *args)
+
+    def train(self, *args):
+        return _pyrl.CNN_train(self, *args)
+
+    def train_single_output(self, *args):
+        return _pyrl.CNN_train_single_output(self, *args)
+
+    def set_training_mode(self):
+        return _pyrl.CNN_set_training_mode(self)
+
+    def unset_training_mode(self):
+        return _pyrl.CNN_unset_training_mode(self)
+
+    def set_learning_rate(self, learning_rate):
+        return _pyrl.CNN_set_learning_rate(self, learning_rate)
+
+    def set_lambda1(self, arg2):
+        return _pyrl.CNN_set_lambda1(self, arg2)
+
+    def set_lambda2(self, arg2):
+        return _pyrl.CNN_set_lambda2(self, arg2)
+
+    def get_learning_rate(self):
+        return _pyrl.CNN_get_learning_rate(self)
+
+    def get_lambda1(self):
+        return _pyrl.CNN_get_lambda1(self)
+
+    def get_lambda2(self):
+        return _pyrl.CNN_get_lambda2(self)
+
+    def save(self, file_name_prefix):
+        return _pyrl.CNN_save(self, file_name_prefix)
+
+    def load_weights(self, file_name_prefix):
+        return _pyrl.CNN_load_weights(self, file_name_prefix)
+CNN_swigregister = _pyrl.CNN_swigregister
+CNN_swigregister(CNN)
+
+class sHistogramItem(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, sHistogramItem, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, sHistogramItem, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["count"] = _pyrl.sHistogramItem_count_set
+    __swig_getmethods__["count"] = _pyrl.sHistogramItem_count_get
+    if _newclass:
+        count = _swig_property(_pyrl.sHistogramItem_count_get, _pyrl.sHistogramItem_count_set)
+    __swig_setmethods__["normalised_count"] = _pyrl.sHistogramItem_normalised_count_set
+    __swig_getmethods__["normalised_count"] = _pyrl.sHistogramItem_normalised_count_get
+    if _newclass:
+        normalised_count = _swig_property(_pyrl.sHistogramItem_normalised_count_get, _pyrl.sHistogramItem_normalised_count_set)
+    __swig_setmethods__["value"] = _pyrl.sHistogramItem_value_set
+    __swig_getmethods__["value"] = _pyrl.sHistogramItem_value_get
+    if _newclass:
+        value = _swig_property(_pyrl.sHistogramItem_value_get, _pyrl.sHistogramItem_value_set)
+
+    def __init__(self):
+        this = _pyrl.new_sHistogramItem()
+        try:
+            self.this.append(this)
+        except __builtin__.Exception:
+            self.this = this
+    __swig_destroy__ = _pyrl.delete_sHistogramItem
+    __del__ = lambda self: None
+sHistogramItem_swigregister = _pyrl.sHistogramItem_swigregister
+sHistogramItem_swigregister(sHistogramItem)
+
+class Histogram(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, Histogram, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, Histogram, name)
+    __repr__ = _swig_repr
+
+    def __init__(self):
+        this = _pyrl.new_Histogram()
+        try:
+            self.this.append(this)
+        except __builtin__.Exception:
+            self.this = this
+    __swig_destroy__ = _pyrl.delete_Histogram
+    __del__ = lambda self: None
+
+    def add(self, value):
+        return _pyrl.Histogram_add(self, value)
+
+    def clear(self):
+        return _pyrl.Histogram_clear(self)
+
+    def compute(self, count=201):
+        return _pyrl.Histogram_compute(self, count)
+
+    def get_count(self):
+        return _pyrl.Histogram_get_count(self)
+
+    def get(self, *args):
+        return _pyrl.Histogram_get(self, *args)
+
+    def asString(self):
+        return _pyrl.Histogram_asString(self)
+
+    def _print(self):
+        return _pyrl.Histogram__print(self)
+
+    def save(self, file_name):
+        return _pyrl.Histogram_save(self, file_name)
+
+    def get_max(self):
+        return _pyrl.Histogram_get_max(self)
+
+    def get_min(self):
+        return _pyrl.Histogram_get_min(self)
+
+    def get_average(self):
+        return _pyrl.Histogram_get_average(self)
+Histogram_swigregister = _pyrl.Histogram_swigregister
+Histogram_swigregister(Histogram)
+
+class ClassificationCompare(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, ClassificationCompare, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, ClassificationCompare, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        this = _pyrl.new_ClassificationCompare(*args)
+        try:
+            self.this.append(this)
+        except __builtin__.Exception:
+            self.this = this
+    __swig_destroy__ = _pyrl.delete_ClassificationCompare
+    __del__ = lambda self: None
+
+    def compare(self, required_value, output_value):
+        return _pyrl.ClassificationCompare_compare(self, required_value, output_value)
+
+    def set_classes_count(self, classes_count):
+        return _pyrl.ClassificationCompare_set_classes_count(self, classes_count)
+
+    def set_top_n_count(self, top_n_count_):
+        return _pyrl.ClassificationCompare_set_top_n_count(self, top_n_count_)
+
+    def clear(self):
+        return _pyrl.ClassificationCompare_clear(self)
+
+    def process(self, percent_result):
+        return _pyrl.ClassificationCompare_process(self, percent_result)
+
+    def get_success(self):
+        return _pyrl.ClassificationCompare_get_success(self)
+
+    def get_summary_result(self):
+        return _pyrl.ClassificationCompare_get_summary_result(self)
+
+    def get_text_result(self):
+        return _pyrl.ClassificationCompare_get_text_result(self)
+
+    def get_json_result(self):
+        return _pyrl.ClassificationCompare_get_json_result(self)
+
+    def save_text_file(self, file_name):
+        return _pyrl.ClassificationCompare_save_text_file(self, file_name)
+
+    def save_json_file(self, file_name):
+        return _pyrl.ClassificationCompare_save_json_file(self, file_name)
+
+    def get_confusion_matrix(self):
+        return _pyrl.ClassificationCompare_get_confusion_matrix(self)
+
+    def get_class_success_rate(self):
+        return _pyrl.ClassificationCompare_get_class_success_rate(self)
+
+    def get_classes_count(self):
+        return _pyrl.ClassificationCompare_get_classes_count(self)
+ClassificationCompare_swigregister = _pyrl.ClassificationCompare_swigregister
+ClassificationCompare_swigregister(ClassificationCompare)
+
+class RegressionCompare(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, RegressionCompare, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, RegressionCompare, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        this = _pyrl.new_RegressionCompare(*args)
+        try:
+            self.this.append(this)
+        except __builtin__.Exception:
+            self.this = this
+    __swig_destroy__ = _pyrl.delete_RegressionCompare
+    __del__ = lambda self: None
+
+    def clear(self):
+        return _pyrl.RegressionCompare_clear(self)
+
+    def set_output_size(self, output_size):
+        return _pyrl.RegressionCompare_set_output_size(self, output_size)
+
+    def compare(self, required_value, output_value):
+        return _pyrl.RegressionCompare_compare(self, required_value, output_value)
+
+    def process(self, fixed_bars_count=-1):
+        return _pyrl.RegressionCompare_process(self, fixed_bars_count)
+
+    def get_error_average_squared(self):
+        return _pyrl.RegressionCompare_get_error_average_squared(self)
+
+    def get_error_min_squared(self):
+        return _pyrl.RegressionCompare_get_error_min_squared(self)
+
+    def get_error_max_squared(self):
+        return _pyrl.RegressionCompare_get_error_max_squared(self)
+
+    def save_text_file(self, log_file_name_prefix):
+        return _pyrl.RegressionCompare_save_text_file(self, log_file_name_prefix)
+
+    def save_json_file(self, json_file_name):
+        return _pyrl.RegressionCompare_save_json_file(self, json_file_name)
+
+    def process_json_result(self):
+        return _pyrl.RegressionCompare_process_json_result(self)
+RegressionCompare_swigregister = _pyrl.RegressionCompare_swigregister
+RegressionCompare_swigregister(RegressionCompare)
+
+class ClassificationExperiment(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, ClassificationExperiment, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, ClassificationExperiment, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, dataset, config_dir):
+        this = _pyrl.new_ClassificationExperiment(dataset, config_dir)
+        try:
+            self.this.append(this)
+        except __builtin__.Exception:
+            self.this = this
+    __swig_destroy__ = _pyrl.delete_ClassificationExperiment
+    __del__ = lambda self: None
+
+    def run(self):
+        return _pyrl.ClassificationExperiment_run(self)
+ClassificationExperiment_swigregister = _pyrl.ClassificationExperiment_swigregister
+ClassificationExperiment_swigregister(ClassificationExperiment)
+
+class RegressionExperiment(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, RegressionExperiment, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, RegressionExperiment, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, dataset, config_dir):
+        this = _pyrl.new_RegressionExperiment(dataset, config_dir)
+        try:
+            self.this.append(this)
+        except __builtin__.Exception:
+            self.this = this
+    __swig_destroy__ = _pyrl.delete_RegressionExperiment
+    __del__ = lambda self: None
+
+    def run(self):
+        return _pyrl.RegressionExperiment_run(self)
+RegressionExperiment_swigregister = _pyrl.RegressionExperiment_swigregister
+RegressionExperiment_swigregister(RegressionExperiment)
+
+class AutoencoderExperiment(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, AutoencoderExperiment, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, AutoencoderExperiment, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, dataset, config_dir):
+        this = _pyrl.new_AutoencoderExperiment(dataset, config_dir)
+        try:
+            self.this.append(this)
+        except __builtin__.Exception:
+            self.this = this
+    __swig_destroy__ = _pyrl.delete_AutoencoderExperiment
+    __del__ = lambda self: None
+
+    def run(self):
+        return _pyrl.AutoencoderExperiment_run(self)
+AutoencoderExperiment_swigregister = _pyrl.AutoencoderExperiment_swigregister
+AutoencoderExperiment_swigregister(AutoencoderExperiment)
+
 class DQN(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, DQN, name, value)

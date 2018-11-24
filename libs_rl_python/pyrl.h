@@ -17,6 +17,16 @@
 #include <dataset_preprocessing.h>
 #include <dataset_tic_tac_toe.h>
 
+#include <cnn.h>
+#include <histogram.h>
+#include <classification_compare.h>
+#include <regression_compare.h>
+#include <classification_experiment.h>
+#include <regression_experiment.h>
+#include <autoencoder_experiment.h>
+
+
+
 #include <dqn.h>
 #include <ddqn.h>
 #include <dqn_compare.h>
