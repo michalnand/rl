@@ -24,7 +24,7 @@ class GLVisualisation
     }
 
   public:
-    void init(std::string window_name = "visualisation", unsigned int window_width = 800, unsigned int window_height = 600);
+    void init(std::string window_name = "visualisation", unsigned int window_width = 800, unsigned int window_height = 800);
 
     unsigned int width();
     unsigned int height();
