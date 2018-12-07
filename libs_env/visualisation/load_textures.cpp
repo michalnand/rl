@@ -24,11 +24,23 @@ LoadTextures::~LoadTextures()
 void LoadTextures::load(std::string file_name)
 {
   std::ifstream f(file_name.c_str());
+
   if (f.good() != true)
   {
     std::cout << "no such texture file " << file_name << "\n";
-    return;
+	
+     file_name = "gui/"+file_name;
+	  std::ifstream f_alternative(file_name.c_str());
+
+	  if (f_alternative.good() != true)
+	  {
+	    std::cout << "no such alternative texture file " << file_name << "\n";
+
+	    return;
+	  }
   }
+
+
 
   JsonConfig json(file_name);
 
@@ -39,7 +51,7 @@ void LoadTextures::load(std::string file_name)
 
   glGenTextures(textures_count, &textures[0]);
 
-  for (unsigned int i = 0; i < textures_count; i++)
+  for (unsigned int i = 0; i < textures_count; i++) 
   {
     std::string texture_file_name = json.result["textures"][i]["file_name"].asString();
     unsigned int texture_id = json.result["textures"][i]["id"].asInt();

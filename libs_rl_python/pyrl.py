@@ -1616,11 +1616,11 @@ class CNN(_object):
     def forward(self, *args):
         return _pyrl.CNN_forward(self, *args)
 
-    def train(self, *args):
-        return _pyrl.CNN_train(self, *args)
-
     def train_single_output(self, *args):
         return _pyrl.CNN_train_single_output(self, *args)
+
+    def train(self, *args):
+        return _pyrl.CNN_train(self, *args)
 
     def set_training_mode(self):
         return _pyrl.CNN_set_training_mode(self)
