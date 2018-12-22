@@ -94,6 +94,48 @@ class Env
 
   protected:
     void process_step();
+
+    public:
+	       State& get_state()
+           {
+               return m_state;
+           }
+
+
+           void set_actions_count(unsigned int actions_count)
+           {
+               m_actions_count = actions_count;
+           }
+
+           float get_reward()
+           {
+               return m_reward;
+           }
+
+           void set_reward(float reward)
+           {
+               m_reward = reward;
+           }
+
+           float get_score()
+           {
+               return m_score;
+           }
+
+           void set_score(float score)
+           {
+               m_score = score;
+           }
+
+           bool get_done()
+           {
+               return m_done;
+           }
+
+           void set_done(bool done)
+           {
+               m_done = done;
+           }
 };
 
 #endif

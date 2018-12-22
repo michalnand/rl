@@ -103,6 +103,12 @@ void State::set_element(float value, unsigned int w, unsigned int h, unsigned in
   m_state[idx] = value;
 }
 
+float State::get_element(unsigned int w, unsigned int h, unsigned int d)
+{
+  unsigned int idx = (d*m_h + h)*m_w + w;
+  return m_state[idx];
+}
+
 void State::clear()
 {
   for (unsigned int i = 0; i < m_state.size(); i++)

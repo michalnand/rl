@@ -2148,6 +2148,9 @@ class State(_object):
     def set_element(self, value, w, h=0, d=0):
         return _pyrl.State_set_element(self, value, w, h, d)
 
+    def get_element(self, w, h=0, d=0):
+        return _pyrl.State_get_element(self, w, h, d)
+
     def clear(self):
         return _pyrl.State_clear(self)
 
@@ -2449,6 +2452,30 @@ class Env(_object):
 
     def get_key(self):
         return _pyrl.Env_get_key(self)
+
+    def get_state(self):
+        return _pyrl.Env_get_state(self)
+
+    def set_actions_count(self, actions_count):
+        return _pyrl.Env_set_actions_count(self, actions_count)
+
+    def get_reward(self):
+        return _pyrl.Env_get_reward(self)
+
+    def set_reward(self, reward):
+        return _pyrl.Env_set_reward(self, reward)
+
+    def get_score(self):
+        return _pyrl.Env_get_score(self)
+
+    def set_score(self, score):
+        return _pyrl.Env_set_score(self, score)
+
+    def get_done(self):
+        return _pyrl.Env_get_done(self)
+
+    def set_done(self, done):
+        return _pyrl.Env_set_done(self, done)
 Env_swigregister = _pyrl.Env_swigregister
 Env_swigregister(Env)
 

@@ -34,6 +34,7 @@ class State
     std::vector<float>& get();
     void set(std::vector<float> &state);
     void set_element(float value, unsigned int w, unsigned int h = 0, unsigned int d = 0);
+    float get_element(unsigned int w, unsigned int h = 0, unsigned int d = 0);
     void clear();
 
     bool is_terminal();
