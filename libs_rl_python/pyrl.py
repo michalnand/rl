@@ -1396,6 +1396,9 @@ class DatasetInterface(_object):
 
     def save_to_binary(self, training_file_name, testing_file_name, unlabeled_file_name):
         return _pyrl.DatasetInterface_save_to_binary(self, training_file_name, testing_file_name, unlabeled_file_name)
+
+    def save_images(self, training_file_name_prefix, testing_file_name_prefix):
+        return _pyrl.DatasetInterface_save_images(self, training_file_name_prefix, testing_file_name_prefix)
 DatasetInterface_swigregister = _pyrl.DatasetInterface_swigregister
 DatasetInterface_swigregister(DatasetInterface)
 
