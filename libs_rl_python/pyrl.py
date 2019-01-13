@@ -1631,6 +1631,9 @@ class CNN(_object):
     def unset_training_mode(self):
         return _pyrl.CNN_unset_training_mode(self)
 
+    def reset_state(self):
+        return _pyrl.CNN_reset_state(self)
+
     def set_learning_rate(self, learning_rate):
         return _pyrl.CNN_set_learning_rate(self, learning_rate)
 
